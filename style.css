@@ -32,7 +32,7 @@ a {
     --image-height: 500px;
     --text-font: 'Roboto';
     --titles-font: 'Playfair';
-    --shadow-value: 10px 10px 20px -10px rgba(0,0,0,0.5);
+    --shadow-value: -3px 10px 34px -10px rgba(0,0,0,0.5);;
     --main-color: aqua;
 
 
@@ -218,6 +218,7 @@ ul li:hover img{
     --nav-links-width: 180px;
     --icon-width: 32px;
 
+    padding-top: 24px;
     background-color: var(--main-color);
     gap: 48px;
 }
@@ -242,13 +243,13 @@ ul li:hover img{
     align-self: center;
 }
 
-
-
-/* for test */
-.contact > * {
-    border: 1px solid black;
+.contact .img-container {
+    height: 500px;
+    background: url('./assets/images/happy\ dealing.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
 
 
 
