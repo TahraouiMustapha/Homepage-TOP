@@ -22,6 +22,9 @@ body {
 
 .main {
     --image-height: 500px;
+    --text-font: 'Roboto';
+    --titles-font: 'Playfair';
+    --shadow-value: 10px 10px 35px -10px rgba(0,0,0,0.75);
 
 
     display: flex;
@@ -34,7 +37,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 48px;
     justify-content: center;
     align-items: center;
     padding-top:48px;
@@ -61,6 +64,25 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.about-me::before, 
+.about-me .img-container {
+    box-shadow: var(--shadow-value);
+}
+
+.img-container .txt {
+    font-family: var(--titles-font);
+    max-width: 300px;
+    font-size: 3.8em;
+    color: white;
+    line-height: 1.1;
+    position: absolute;
+    bottom: 24px;
+    text-align: center;
+    text-shadow: -1px 4px 7px #000000;
 }
 
 .about-me .content {
@@ -69,10 +91,24 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+}
+
+.title {
+    font-family: var(--titles-font);
+    font-size: 3em;
+}
+
+.content .txt {
+    font-family: var(--text-font);
+    font-size: 1.3em;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-links {
+    width: 180px;
 }
 
 /* for test */
 
-.content > *{
-    border: 1px solid red;
-}
