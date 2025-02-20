@@ -21,7 +21,9 @@ body {
 }
 
 .homepage {
-    --box-shadow-value:  10px 10px 40px -10px rgba(0,0,0,0.5);
+    --title-font: 'Playfair';
+    --text-font: 'Roboto';
+    --box-shadow-value:  8px 10px 40px -10px rgba(0,0,0,0.5);
 
     height: 100%;
     display: flex;
@@ -51,10 +53,8 @@ body {
 }   
 
 .container {
-    border: 1px solid blue;
-
     margin: 0 auto;
-    min-width: 85vw;
+    max-width: 90vw;
     height: 350px;
 
     display: flex;
@@ -76,11 +76,41 @@ body {
 .container .content {
     flex: 1;
     margin-left: 32px;
-    padding:40px;
+    padding:28px 48px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
+.title {
+    font-family: var(--title-font);
+    font-size: 2em;
+    font-weight: 400;
+} 
+
+.content .txt {
+    font-family: var(--text-font);
+    line-height: 1.4;
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.856);
+}
+
+.content .nav-links {
+    align-self: flex-end;
+    margin-top: 12px;
+}
+
+.nav-links {
+    width: 10vw;
+}
+
+
+
 /* for test */
-.container {
-    border: 1px solid red;
+.container .content >* {
+    border: 1px solid black;
 }
 
