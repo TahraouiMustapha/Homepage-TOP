@@ -33,10 +33,12 @@ a {
     --text-font: 'Roboto';
     --titles-font: 'Playfair';
     --shadow-value: 10px 10px 20px -10px rgba(0,0,0,0.5);
+    --main-color: aqua;
 
 
     display: flex;
     flex-direction: column;
+    gap: 48px;
 }
 
 /* About me section */
@@ -58,7 +60,7 @@ a {
     content: '';
     width: 100%;
     height: var(--image-height);
-    background-color: aqua;
+    background-color: var(--main-color);
     position: absolute;
     top: 0;
     left: 0;
@@ -173,11 +175,11 @@ ul li:hover img{
 
 .card .screeshot {
     height: 65%;
+    width: 100%;
+}
 
-    background: url('/assets/images/developer.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.card .screeshot img {
+    width: 100%;
 }
 
 .card .project-info {
@@ -204,11 +206,48 @@ ul li:hover img{
     padding: 0 10px;
 }
 
+/* for contact information section */
+.contact, 
+.contact .content ,
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
 
+.contact {
+    --nav-links-width: 180px;
+    --icon-width: 32px;
+
+    background-color: var(--main-color);
+    gap: 48px;
+}
+
+.contact .content {
+    align-items: center;
+    gap: 24px;
+    font-family: var(--text-font);
+}
+
+.contact-info {
+    gap: 24px;
+    padding: 0 24px;
+    font-size: 1.1em;
+}
+
+.get-in-touch {
+    font-size: 1.3em;
+}
+
+.contact .nav-links {
+    align-self: center;
+}
 
 
 
 /* for test */
+.contact > * {
+    border: 1px solid black;
+}
 
 
 
