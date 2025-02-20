@@ -20,20 +20,25 @@ body {
     width: 100vw;
 }
 
-.main {
+.homepage {
+    --box-shadow-value:  10px 10px 40px -10px rgba(0,0,0,0.5);
+
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 /* About me section */
-.about-me {
+.about-me-section {
     height: 90vh;
     position: relative;
     overflow: hidden;
+
+    display: flex;
+    align-items: center;
 }
 
-.about-me::before {
+.about-me-section::before {
     content: '';
     width: 100%;
     height: 100%;
@@ -42,13 +47,40 @@ body {
     z-index: -1;
     transform-origin: left;
     transform: skewY(-0.3rad) ;
+    box-shadow: var(--box-shadow-value);
 }   
 
-/* for test */
-.main {
-    border: 1px solid black;
+.container {
+    border: 1px solid blue;
+
+    margin: 0 auto;
+    min-width: 85vw;
+    height: 350px;
+
+    display: flex;
+    box-shadow: var(--box-shadow-value);
 }
 
-.about-me {
+.container .img-container {
+    background: url(/assets/images/developer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+
+    width: 500px;
+    transform: scale(1.2);
+    box-shadow: var(--box-shadow-value);
+}
+
+.container .content {
+    flex: 1;
+    margin-left: 32px;
+    padding:40px;
+}
+
+/* for test */
+.container {
     border: 1px solid red;
 }
+
