@@ -259,7 +259,8 @@ ul li:hover img{
     background-repeat: no-repeat;
 }
 
-@media (min-width: 500px) and (max-width: 1000px) {
+/* styles for tablet screen  */
+@media (min-width: 600px) and (max-width: 1000px) {
     /* about me section */
     .about-me {
         display: flex;
@@ -350,5 +351,43 @@ ul li:hover img{
     }
 }
 
+/* styles for desktop screen */
+@media (min-width: 1000px) {
+    /* about section */
+    .about-me {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-me .container {
+        background-color: white;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 48px;
+        width: 80vw;
+        height: 400px;
+    
+
+        box-shadow: var(--shadow-value);
+    }
+
+    .about-me .img-container {
+        min-width: unset;
+        width: 400px;
+        height: 400px;
+        transform: scale(1.2);
+    }
+
+    .about-me .container .content {
+        max-width: unset;
+        flex: 1;
+        padding: 24px;
+        align-items: normal;
+    }
+
+    .about-me .container .nav-links {
+        align-self: end;
+    }
+}
 
 
