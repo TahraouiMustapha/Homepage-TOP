@@ -78,7 +78,7 @@ a {
     min-width: 80vw;
     height: var(--image-height);
 
-    background: url('./assets/images/developer.jpg') ;
+    background: url('../assets/images/developer.jpg') ;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
