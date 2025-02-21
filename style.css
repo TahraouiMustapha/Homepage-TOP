@@ -61,7 +61,7 @@ a {
     gap: 48px;
 }
 
-.about-me-section::before {
+.about-me::before {
     content: '';
     width: 100%;
     height: var(--image-height);
@@ -72,7 +72,6 @@ a {
     z-index: -1;
     transform-origin: left;
     transform: skewY(-0.3rad) ;
-    box-shadow: var(--box-shadow-value);
 }   
 
 .about-me .img-container {
@@ -170,7 +169,7 @@ ul li:hover img{
     width: 100%;    
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 320px));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 320px));
     grid-auto-rows: 420px;
     gap: 48px;
 }
