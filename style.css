@@ -35,7 +35,7 @@ a {
     --shadow-value: -3px 10px 34px -10px rgba(0,0,0,0.5);;
     --main-color: aqua;
 
-
+    width: 100vw;
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -47,13 +47,16 @@ a {
     --icon-width: 32px;
     --font-size-text: 1.3em;
     min-height: 90vh;
+    width: 100%;
     position: relative;
+    padding-top:48px;
+}
+
+.about-me .container {
     display: flex;
     flex-direction: column;
-    gap: 48px;
-    justify-content: center;
     align-items: center;
-    padding-top:48px;
+    gap: 48px;
 }
 
 .about-me::before {
@@ -89,7 +92,7 @@ a {
 .img-container .txt {
     font-family: var(--titles-font);
     max-width: 300px;
-    font-size: 3.8em;
+    font-size: 3.8rem;
     color: white;
     line-height: 1.1;
     position: absolute;
