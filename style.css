@@ -165,10 +165,11 @@ ul li:hover img{
 }
 
 .projects {
+    padding: 0 32px;
     width: 100%;    
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 320px));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 320px));
     grid-auto-rows: 420px;
     gap: 48px;
 }
@@ -365,7 +366,7 @@ ul li:hover img{
         align-items: center;
         margin-top: 48px;
         width: 80vw;
-        height: 400px;
+        max-height: 430px;
     
 
         box-shadow: var(--shadow-value);
@@ -387,7 +388,35 @@ ul li:hover img{
 
     .about-me .container .nav-links {
         align-self: end;
+    } 
+
+    /* my-work section  */
+    .my-work .title {
+        align-self: start;
+        margin-left:48px;
     }
+
+    /* for contact section */
+    .contact {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 32px 0;
+    }
+
+    .contact .content {
+        width: 40vw;
+        align-items: start;
+    }
+
+    .contact .img-container {
+        width: 500px;
+        height: 380px;
+    }
+
+    .contact .nav-links {
+        align-self: start;
+    }
+
 }
 
 
